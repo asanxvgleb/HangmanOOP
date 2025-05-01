@@ -7,7 +7,7 @@ import java.util.Random;
 
 public class WordProcessor {
 
-    public String getRandomWordFromFile(){
+    public String getRandomWordFromFile() {
         String word;
         try {
             List<String> words = Files.readAllLines(Path.of("words.txt"))
@@ -23,8 +23,8 @@ public class WordProcessor {
         return word;
     }
 
-    public char[] makeMaskedWord(String word){
-        char[]maskedWord = word.toCharArray();
+    public char[] makeMaskedWord(String word) {
+        char[] maskedWord = word.toCharArray();
         Arrays.fill(maskedWord, '*');
         return maskedWord;
     }

@@ -7,7 +7,7 @@ public class UserInputReader {
         this.scanner = new Scanner(System.in);
     }
 
-    public char readUserInput(){
+    public char readUserInput() {
         return scanner.next().toLowerCase().charAt(0);
     }
 
